@@ -10,6 +10,13 @@ export class AppComponent {
 
   toggle=true;
 
+  toggler()
+  {
+    console.log(this.toggle)
+
+    return this.toggle =!this.toggle
+
+  }
 
 
 
