@@ -9,12 +9,15 @@ export class AppComponent {
   title = 'assignment_3';
 
   toggle=true;
-
+  clicks:any[]=[]
   toggler()
   {
-    console.log(this.toggle)
 
-    return this.toggle =!this.toggle
+    this.clicks.push(new Date());
+    
+
+    this.toggle =!this.toggle
+    
 
   }
 
