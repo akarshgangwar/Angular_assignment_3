@@ -1,3 +1,4 @@
 <button (click)="toggler()">Show Details</button>
 <p *ngIf="toggle">my name is AKARSH</p>
-<p *ngFor="let clic of clicks"   >{{clic}}</p>
+<p *ngFor="let clic of clicks; let inde=index;"  [ngStyle]=" { backgroundColor: inde>=4 ? 'blue' : 'transparent'}   "
+>{{clic}}</p>
